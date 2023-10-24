@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-
+const CopyPlugin = require("copy-webpack-plugin");
 
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -39,6 +39,16 @@ const client = {
             },
         ],
     },
+    plugins:[
+        new CopyPlugin({
+            patterns:[
+                {
+                    from:path.resolve(__dirname, "src", "fxmanifest.lua"),
+                    to:buildPath
+                }
+            ],
+        })
+    ],
     optimization: {
         minimize: true,
     },
@@ -50,5 +60,6 @@ const client = {
         path: path.resolve(buildPath, 'client'),
     },
 };
+
 
 module.exports = [server, client];
