@@ -1,0 +1,41 @@
+{
+  "name": "rdr2_boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for rdr2 RP resources development",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KudjoPudjo/RDR2_BOILERPLATE.git"
+  },
+  "keywords": [
+    "RDR2",
+    "RP",
+    "RDR2",
+    "RP",
+    "RDR2",
+    "mods"
+  ],
+  "author": "Dmitriy Zakharov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KudjoPudjo/RDR2_BOILERPLATE/issues"
+  },
+  "homepage": "https://github.com/KudjoPudjo/RDR2_BOILERPLATE#readme",
+  "dependencies": {
+    "@citizenfx/client": "^2.0.6878-1",
+    "@citizenfx/server": "^2.0.6878-1",
+    "@types/node": "^20.8.7"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
